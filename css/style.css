@@ -1,0 +1,185 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1,
+section > h2,
+#lipsticks > h2 {
+     text-align: center;
+     font-weight: bold;
+}
+
+h1 {
+     padding: 50px 0;
+}
+h2{
+     font-size: 1.5em;
+}
+
+section > h2 {
+     text-align: start;
+     margin-left: 30px;
+
+}
+#skins-section,
+#lipsticks-section > ul,
+.container {
+     display: flex;
+}
+
+#skins-section > ul {
+     flex-direction: column;
+     margin-left: 30px;
+}
+
+.skintone {
+     flex-basis: 20%;
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+     margin: 30px 100px;
+}
+
+#face {
+     display: flex;
+     flex-shrink: 0;
+     border: 1px solid black;
+     border-radius: 50%;
+     width: 500px;
+     height: 600px;
+     margin: 10px 0 10px 20%;
+}
+
+#lipsticks{
+     margin: 30px 0;
+}
+
+#lipsticks-section {
+     display: inline;
+}
+
+.lipstick-color {
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+     margin: 30px 10px;
+     border-radius: 50px;
+}
+
+#lipsticks-section > ul {
+     width: 700px;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.container {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+#face {
+     position: relative;
+     z-index: 1;
+}
+
+#face > svg {
+     position: absolute;
+     width: 600px;
+     height: 300px;
+     top: 350px;
+     right: -8%;
+     z-index: -1;
+}
+
+#lips {
+     fill: #000000;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* SKIN COLOR SELECTION*/
+
+.skin-selection :nth-child(1) .skintone {
+     background: #472818;
+}
+
+.skin-selection :nth-child(2) .skintone {
+     background: #6B3B24;
+}
+
+.skin-selection :nth-child(3) .skintone {
+     background: #8E522D;
+}
+
+.skin-selection :nth-child(4) .skintone {
+     background: #A86E3C;
+}
+
+.skin-selection :nth-child(5) .skintone {
+     background: #E7A575;
+}
+
+.skin-selection :nth-child(6) .skintone  {
+     background: #F8DDD4;
+}
+
+/* LIPSTICK COLOR SELECTION*/
+
+.lipstick-selection :nth-child(1) .lipstick-color {
+     background: #762126;
+}
+
+.lipstick-selection :nth-child(2) .lipstick-color {
+     background: #CA5E4F;
+}
+
+.lipstick-selection :nth-child(3) .lipstick-color {
+     background: #D01E29;
+}
+
+.lipstick-selection :nth-child(4) .lipstick-color {
+     background: #A92922;
+}
+
+.lipstick-selection :nth-child(5) .lipstick-color {
+     background: #CE8467;
+}
+
+.lipstick-selection :nth-child(6) .lipstick-color  {
+     background: #ED3921;
+}
+
+#lipstick-name {
+     font-size: 1.5em;
+     font-weight: bold;
+     margin: 0 auto;
+     padding: 5px 0 5px 35% ;
+     border-bottom: black solid 1px;
+}
